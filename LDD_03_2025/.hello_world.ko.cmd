@@ -1,0 +1,1 @@
+savedcmd_/home/exin/Workspace/LDD/LDD_03_2025/hello_world.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/exin/Workspace/LDD/LDD_03_2025/hello_world.ko /home/exin/Workspace/LDD/LDD_03_2025/hello_world.o /home/exin/Workspace/LDD/LDD_03_2025/hello_world.mod.o
