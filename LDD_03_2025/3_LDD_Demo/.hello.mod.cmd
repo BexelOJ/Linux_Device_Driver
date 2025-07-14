@@ -1,0 +1,1 @@
+savedcmd_/home/exin/Workspace/LDD/LDD_03_2025/3_LDD_Demo/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/exin/Workspace/LDD/LDD_03_2025/3_LDD_Demo/"$$0) }' > /home/exin/Workspace/LDD/LDD_03_2025/3_LDD_Demo/hello.mod
