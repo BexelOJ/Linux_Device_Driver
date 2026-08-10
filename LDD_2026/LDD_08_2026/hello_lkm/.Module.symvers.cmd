@@ -1,0 +1,1 @@
+savedcmd_/home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/Module.symvers -T /home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/modules.order -i Module.symvers -e 

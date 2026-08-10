@@ -1,0 +1,1 @@
+savedcmd_/home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/modules.order := {   echo /home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/hello.o; :; } > /home/exin/Workspace/LinuxDD/LDD_2026/LDD_08_2026/hello_lkm/modules.order
