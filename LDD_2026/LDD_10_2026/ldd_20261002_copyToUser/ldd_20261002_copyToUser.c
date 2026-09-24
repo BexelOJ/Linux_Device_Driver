@@ -1,0 +1,171 @@
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/uaccess.h>
+
+//---------------------------------------------------
+
+#define DEVICE_NAME "ldd_copyToUser"
+
+static dev_t deviceNumber;
+static struct cdev ldd_cdev;
+
+static const char kernelMessage[] =
+    "Data from kernel space\n";
+
+//---------------------------------------------------
+
+static ssize_t ldd_deviceRead(
+    struct file *file,
+    char __user *buffer,
+    size_t count,
+    loff_t *offset
+)
+{
+    size_t messageLength;
+    size_t bytesToCopy;
+
+    //---------------------------------------------------
+
+    messageLength = strlen(kernelMessage);
+
+    //---------------------------------------------------
+
+    if (*offset >= messageLength)
+    {
+        return 0;
+    }
+
+    //---------------------------------------------------
+
+    bytesToCopy = min(
+        count,
+        messageLength - (size_t)*offset
+    );
+
+    //---------------------------------------------------
+
+    if (copy_to_user(
+            buffer,
+            kernelMessage + *offset,
+            bytesToCopy))
+    {
+        return -EFAULT;
+    }
+
+    //---------------------------------------------------
+
+    *offset += bytesToCopy;
+
+    //---------------------------------------------------
+
+    pr_info(
+        "ldd_20261002_copyToUser: "
+        "Copied %zu bytes to userspace\n",
+        bytesToCopy
+    );
+
+    //---------------------------------------------------
+
+    return bytesToCopy;
+}
+
+//---------------------------------------------------
+
+static const struct file_operations ldd_fops =
+{
+    .owner = THIS_MODULE,
+    .read = ldd_deviceRead,
+};
+
+//---------------------------------------------------
+
+static int __init ldd_moduleInit(void)
+{
+    int result;
+
+    //---------------------------------------------------
+
+    result = alloc_chrdev_region(
+        &deviceNumber,
+        0,
+        1,
+        DEVICE_NAME
+    );
+
+    if (result < 0)
+        return result;
+
+    //---------------------------------------------------
+
+    cdev_init(
+        &ldd_cdev,
+        &ldd_fops
+    );
+
+    //---------------------------------------------------
+
+    result = cdev_add(
+        &ldd_cdev,
+        deviceNumber,
+        1
+    );
+
+    if (result < 0)
+    {
+        unregister_chrdev_region(
+            deviceNumber,
+            1
+        );
+
+        return result;
+    }
+
+    //---------------------------------------------------
+
+    pr_info(
+        "ldd_20261002_copyToUser: "
+        "Major=%u Minor=%u\n",
+        MAJOR(deviceNumber),
+        MINOR(deviceNumber)
+    );
+
+    return 0;
+}
+
+//---------------------------------------------------
+
+static void __exit ldd_moduleExit(void)
+{
+    cdev_del(&ldd_cdev);
+
+    unregister_chrdev_region(
+        deviceNumber,
+        1
+    );
+
+    pr_info(
+        "ldd_20261002_copyToUser: "
+        "Module unloaded\n"
+    );
+}
+
+//---------------------------------------------------
+
+module_init(ldd_moduleInit);
+module_exit(ldd_moduleExit);
+
+//---------------------------------------------------
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Lr");
+MODULE_DESCRIPTION(
+    "Linux copy_to_user demonstration"
+);
+
+//---------------------------------------------------
+
+
+
