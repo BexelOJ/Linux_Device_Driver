@@ -1,0 +1,15 @@
+# Linux Kernel Module build ertifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+Module.symvers
+modules.order
+
+# Kernel build directory
+.tmp_versions/
+
+
+
+
