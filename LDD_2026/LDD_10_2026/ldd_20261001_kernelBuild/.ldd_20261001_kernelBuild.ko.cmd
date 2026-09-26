@@ -1,0 +1,1 @@
+savedcmd_ldd_20261001_kernelBuild.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-7.0.0-1020-raspi/scripts/module.lds -o ldd_20261001_kernelBuild.ko ldd_20261001_kernelBuild.o ldd_20261001_kernelBuild.mod.o .module-common.o

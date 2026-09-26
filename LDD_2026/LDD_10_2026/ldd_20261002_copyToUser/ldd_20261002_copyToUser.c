@@ -160,7 +160,7 @@ module_exit(ldd_moduleExit);
 //---------------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION(
     "Linux copy_to_user demonstration"
 );
