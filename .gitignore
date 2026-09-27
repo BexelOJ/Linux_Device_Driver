@@ -4,8 +4,13 @@
 *.mod
 *.mod.c
 *.mod.o
+*.cmd
 Module.symvers
 modules.order
+
+# Vim swap files
+*.swp
+*.swo
 
 # Kernel build directory
 .tmp_versions/
