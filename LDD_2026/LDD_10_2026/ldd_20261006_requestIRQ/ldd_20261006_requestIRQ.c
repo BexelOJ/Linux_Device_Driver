@@ -81,7 +81,7 @@ module_exit(request_irq_exit);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("request_irq() demonstration");
 
 //-------------------------------------------

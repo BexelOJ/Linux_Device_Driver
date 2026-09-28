@@ -89,7 +89,7 @@ module_exit(wait_queue_irq_exit);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("IRQ and wait queue demonstration");
 
 //-------------------------------------------

@@ -92,7 +92,7 @@ module_exit(top_bottom_exit);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("IRQ top half and bottom half demonstration");
 
 //-------------------------------------------

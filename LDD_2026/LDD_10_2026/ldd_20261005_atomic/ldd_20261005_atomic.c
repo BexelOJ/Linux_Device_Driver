@@ -89,7 +89,7 @@ module_exit(atomic_exit_module);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("Atomic operation demonstration");
 
 //-------------------------------------------

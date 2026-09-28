@@ -140,7 +140,7 @@ module_platform_driver(
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION(
     "Basic hardware IRQ platform driver"
 );

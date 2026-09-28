@@ -88,7 +88,7 @@ module_exit(get_free_pages_exit);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("get_free_pages() demonstration");
 
 //-------------------------------------------

@@ -76,7 +76,7 @@ module_exit(irq_basic_exit);
 //-------------------------------------------
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Lr");
+MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("Basic IRQ demonstration");
 
 //-------------------------------------------
