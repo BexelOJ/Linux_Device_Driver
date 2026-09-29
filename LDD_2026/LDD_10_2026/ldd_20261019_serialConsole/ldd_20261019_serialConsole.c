@@ -66,7 +66,7 @@ MODULE_DESCRIPTION("Serial console demonstration");
 
 
 /*
-
+//-------------------------------------------
 
 printk()
    │
@@ -82,7 +82,7 @@ UART TX register/FIFO
    ▼
 UART hardware
 
-
+//-------------------------------------------
 */
 
 

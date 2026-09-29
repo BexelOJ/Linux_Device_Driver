@@ -68,6 +68,7 @@ MODULE_DESCRIPTION("Device Resource Management example");
 
 
 /*
+//-------------------------------------------
 
 devm_kzalloc()
       ↓
@@ -77,5 +78,7 @@ device removed
       ↓
 kernel automatically frees resource
 
+//-------------------------------------------
 */
+
 

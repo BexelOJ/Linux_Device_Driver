@@ -204,9 +204,11 @@ MODULE_DESCRIPTION("Complete Linux device power management example");
 
 
 /*
+//-------------------------------------------
 
 
 
+//-------------------------------------------
 */
 
 

@@ -136,12 +136,12 @@ MODULE_DESCRIPTION("UART interrupt demonstration");
 
 
 /*
+//-------------------------------------------
 
 UART interrupt framework:
 
 
-
-
+//-------------------------------------------
 */
 
 

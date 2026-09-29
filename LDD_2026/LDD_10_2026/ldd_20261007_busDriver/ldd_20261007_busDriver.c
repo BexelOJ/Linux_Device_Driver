@@ -50,11 +50,14 @@ MODULE_DESCRIPTION("Linux bus registration example");
 
 /*
 //-------------------------------------------
+
 Device Model
      │
      ├── Bus
      │    ├── Devices
      │    └── Drivers
+
+
 //-------------------------------------------
 
 */

@@ -103,7 +103,7 @@ MODULE_DESCRIPTION("Linux Regulator Framework example");
 
 
 /*
-
+//-------------------------------------------
 
 vdd-supply
      │
@@ -116,7 +116,7 @@ devm_regulator_get_optional()
      ▼
 struct regulator *
 
-
+//-------------------------------------------
 */
 
 

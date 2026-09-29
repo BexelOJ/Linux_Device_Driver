@@ -86,4 +86,12 @@ MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("I2C register access example");
 
 
+/*
+//-------------------------------------------
+
+
+
+//-------------------------------------------
+*/
+
 

@@ -133,6 +133,7 @@ MODULE_DESCRIPTION("Linux Runtime PM example");
 
 
 /*
+//-------------------------------------------
 
 Device active
      │
@@ -150,6 +151,7 @@ Low power
      ▼
 runtime_resume()
 
+//-------------------------------------------
 */
 
 

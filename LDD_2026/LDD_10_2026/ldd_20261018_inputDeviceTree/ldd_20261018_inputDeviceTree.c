@@ -140,7 +140,7 @@ MODULE_DESCRIPTION("Device Tree Input Button driver");
 
 
 /*
-
+//-------------------------------------------
 
 Device Tree
     │
@@ -151,7 +151,7 @@ devm_gpiod_get()
     ▼
 struct gpio_desc
 
-
+//-------------------------------------------
 */
 
 

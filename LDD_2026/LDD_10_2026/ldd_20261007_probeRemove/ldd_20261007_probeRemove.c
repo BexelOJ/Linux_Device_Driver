@@ -48,9 +48,9 @@ MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("Platform driver probe/remove example");
 
 
-
 /*
 //-------------------------------------------
+
 Device appears
      ↓
 Device Model finds matching driver
@@ -69,7 +69,6 @@ remove()
 Driver releases resources
 
 //-------------------------------------------
-
 */
 
 

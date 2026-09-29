@@ -121,6 +121,7 @@ MODULE_DESCRIPTION("UART Device Tree demonstration");
 
 
 /*
+//-------------------------------------------
 
 Device Tree matching for a UART platform device:
 
@@ -144,6 +145,7 @@ devm_ioremap_resource()
      ▼
 UART registers
 
+//-------------------------------------------
 */
 
 

@@ -120,4 +120,12 @@ MODULE_AUTHOR("Er Bexel O J");
 MODULE_DESCRIPTION("Generic I2C sensor example");
 
 
+/*
+//-------------------------------------------
+
+
+
+//-------------------------------------------
+*/
+
 

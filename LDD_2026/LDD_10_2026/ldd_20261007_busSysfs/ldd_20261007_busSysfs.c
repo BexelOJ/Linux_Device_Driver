@@ -87,11 +87,13 @@ MODULE_DESCRIPTION("Bus sysfs attribute example");
 
 /*
 //-------------------------------------------
+
 /sys/bus/
        │
        └── ldd_bus_sysfs/
               │
               └── version
+
 
 //-------------------------------------------
 */

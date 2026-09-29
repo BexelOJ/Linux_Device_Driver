@@ -136,9 +136,18 @@ MODULE_DESCRIPTION("UART DMA demonstration");
 
 
 /*
+//-------------------------------------------
 
+CPU memory
+    │
+    │ DMA
+    ▼
+UART DMA controller
+    │
+    ▼
+UART FIFO
 
-
+//-------------------------------------------
 */
 
 

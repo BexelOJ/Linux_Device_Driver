@@ -172,6 +172,7 @@ MODULE_DESCRIPTION("GPIO software debounce example");
 
 
 /*
+//-------------------------------------------
 
                   Button
                     │
@@ -194,6 +195,6 @@ MODULE_DESCRIPTION("GPIO software debounce example");
                     ↓
              stable button state
 
-
+//-------------------------------------------
 */
 

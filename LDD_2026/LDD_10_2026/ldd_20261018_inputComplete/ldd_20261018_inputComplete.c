@@ -251,7 +251,7 @@ MODULE_DESCRIPTION("Complete GPIO Input driver");
 
 
 /*
-
+//-------------------------------------------
 
 Device Tree
      ↓
@@ -265,7 +265,7 @@ Input subsystem
      ↓
 /dev/input/eventX
 
-
+//-------------------------------------------
 */
 
 

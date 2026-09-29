@@ -95,6 +95,7 @@ MODULE_DESCRIPTION("Device attribute groups example");
 
 /*
 //-------------------------------------------
+
 The important structure is:
 
 device
@@ -102,6 +103,7 @@ device
   └── sysfs
        │
        └── value
+
 
 //-------------------------------------------
 */

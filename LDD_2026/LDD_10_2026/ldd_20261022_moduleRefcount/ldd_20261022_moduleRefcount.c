@@ -94,7 +94,7 @@ MODULE_DESCRIPTION("Linux module reference counting example");
 
 
 /*
-
+//-------------------------------------------
 
 insmod
   │
@@ -112,7 +112,7 @@ Module in use
   ▼
 Module can become unloadable
 
-
+//-------------------------------------------
 */
 
 

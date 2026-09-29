@@ -1,4 +1,4 @@
-#include <linux/module.h>
+lude <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/platform_device.h>
 #include <linux/reset.h>
@@ -90,5 +90,13 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("er Bexel O J");
 MODULE_DESCRIPTION("Device Tree reset controller example");
 
+
+/*
+//-------------------------------------------
+
+
+
+//-------------------------------------------
+*/
 
 

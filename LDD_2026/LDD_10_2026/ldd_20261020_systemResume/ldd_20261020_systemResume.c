@@ -119,7 +119,7 @@ MODULE_DESCRIPTION("Linux system resume example");
 
 
 /*
-
+//-------------------------------------------
 
 System suspend
       │
@@ -141,6 +141,7 @@ System suspend
       ▼
  complete()
 
+//-------------------------------------------
 */
 
 

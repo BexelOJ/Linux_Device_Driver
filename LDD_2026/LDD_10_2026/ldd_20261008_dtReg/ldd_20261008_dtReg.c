@@ -43,4 +43,12 @@ MODULE_AUTHOR("Lr");
 MODULE_DESCRIPTION("Device Tree basic registration example");
 
 
+/*
+//-------------------------------------------
+
+
+
+//-------------------------------------------
+*/
+
 
