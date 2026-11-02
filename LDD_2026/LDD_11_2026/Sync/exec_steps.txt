@@ -1,0 +1,28 @@
+----------------------------------------------
+Mutex
+
+gcc -Wall -Wextra -g -O0 syn_20261102_mutex_demo -o mutex_demo -pthread
+
+./mutex_demo
+
+----------------------------------------------
+Semaphore
+
+gcc -Wall -Wextra -g -O0 syn_20261102_semaphore_demo.c -o semaphore_demo -pthread
+
+./semaphore_demo
+
+----------------------------------------------
+Spinlock
+
+gcc -Wall -Wextra -g -O0 syn_20261102_spinlock_demo.c -o spinlock_demo -pthread
+
+./spinlock_demo
+
+----------------------------------------------
+
+
+----------------------------------------------
+
+
+
